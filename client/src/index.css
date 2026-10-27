@@ -1,0 +1,14 @@
+body { background:#0f1222; color:#eaeaf2; }
+.navbar-imovies { background:#171a30; }
+.brand { color:#ff4d6d; font-weight:800; letter-spacing:.5px; }
+.card-dark { background:#1b1f3a; border:1px solid #2a2f55; color:#eaeaf2; }
+.poster { height:300px; object-fit:cover; background:#2a2f55; }
+.hero { background:linear-gradient(120deg,#ff4d6d,#6a11cb); border-radius:16px; padding:64px 32px; }
+.screen { height:8px; background:#ff4d6d; border-radius:50%; margin:24px auto; width:70%; box-shadow:0 8px 24px #ff4d6d88; }
+.seat { width:34px; height:34px; margin:3px; border-radius:6px 6px 2px 2px; border:1px solid #6a6fa0; background:#232850; color:#cfd2ff; font-size:11px; }
+.seat.sel { background:#ff4d6d; border-color:#ff4d6d; color:#fff; }
+.seat.taken { background:#444; border-color:#444; color:#777; cursor:not-allowed; }
+.form-control, .form-select { background:#12152b; color:#eaeaf2; border-color:#2a2f55; }
+.form-control:focus, .form-select:focus { background:#12152b; color:#fff; }
+.table { --bs-table-bg:transparent; --bs-table-color:#eaeaf2; }
+a { text-decoration:none; }

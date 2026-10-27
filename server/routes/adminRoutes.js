@@ -1,0 +1,12 @@
+const r = require("express").Router();
+const c = require("../controllers/adminController");
+const b = require("../controllers/bookingController");
+const { fetchUser, adminOnly } = require("../middlewares/fetchUser");
+r.post("/register", c.register);
+r.post("/login", c.login);
+r.get("/stats", fetchUser, adminOnly, c.stats);
+r.get("/users", fetchUser, adminOnly, c.users);
+r.delete("/users/:id", fetchUser, adminOnly, c.deleteUser);
+r.get("/bookings", fetchUser, adminOnly, b.all);
+r.delete("/reviews/:id", fetchUser, adminOnly, c.deleteReview);
+module.exports = r;
