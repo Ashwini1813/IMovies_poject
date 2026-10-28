@@ -21,6 +21,9 @@
 /api/movie | /api/theatre | /api/shows | /api/bookings (POST, /my, PUT /:id/cancel)
 /api/favorite | /api/reviews
 
+
+##> Note: Screenshots below are from the MERN app (React + Express + MongoDB). The demo link is a hosted UI preview of the same project.
+
 ## Screenshots 
 
 1. Landing Page <img width="1895" height="502" alt="landing page" src="https://github.com/user-attachments/assets/63533199-bc82-46d5-a8d9-7d8effbc6f47" />
