@@ -1,28 +1,39 @@
-# IMovies - Movie ticket booking made simple (MERN)
+# IMovies - Movie ticket booking made # IMovies - Movie Ticket Booking Made Simple (MERN)
 
-## Structure
-- `server/` Express + Mongoose (MVC: models / controllers / routes, middlewares, utils)
-- `client/` React (Vite) + React Router + Axios + Bootstrap
+A full-stack movie ticket booking app with seat selection, theatre and show management, bookings, reviews and an admin dashboard.
 
-## Run
-1. MongoDB local chalu rakho (ya Atlas link `.env` mein daalo)
-2. Backend:
-   cd server && npm install && npm run dev      -> http://localhost:3000
-3. Frontend (naya terminal):
-   cd client && npm install && npm run dev      -> http://localhost:5173
-4. Admin banane ke liye (ek baar, Postman/Thunder Client):
-   POST http://localhost:3000/api/auth/admin/register
-   { "name":"Admin", "email":"admin@imovies.com", "password":"admin123", "secret":"change_admin_secret" }
-5. Login page par "Login as Admin" tick karke login karo -> Add Theatre -> Add Movie -> Add Show
-6. Normal user register karke booking test karo.
+## Tech Stack
+React (Vite) • React Router • Axios • Bootstrap • Node.js • Express • MongoDB Atlas • Mongoose • JWT
 
-## API
-/api/auth (register, login, logout, me) | /api/auth/admin (register, login, stats, users, bookings)
-/api/movie | /api/theatre | /api/shows | /api/bookings (POST, /my, PUT /:id/cancel)
-/api/favorite | /api/reviews
+## Features
+- User registration and login (JWT)
+- Browse, search and filter movies
+- Seat selection with booked seats blocked (no double booking)
+- Booking history and cancellation
+- Watchlist and movie reviews
+- Admin dashboard to manage movies, theatres, shows, bookings and users
 
+## Project Structure
+- `server/` Express + Mongoose backend (models, controllers, routes, middlewares, utils)
+- `client/` React frontend
 
-##> Note: Screenshots below are from the MERN app (React + Express + MongoDB). The demo link is a hosted UI preview of the same project.
+## How to Run
+1. Create `server/.env` from `server/.env.example` and add your MongoDB connection link.
+2. Backend: `cd server && npm install && npm run dev` (runs on port 3000)
+3. Seed sample data and admin: `cd server && node seed.js`
+4. Frontend: `cd client && npm install && npm run dev` (runs on http://localhost:5173)
+5. Set `VITE_API_URL` in `client/.env` to your backend URL ending with `/api`.
+
+**Admin login:** tick "Login as Admin" with `admin@imovies.com` / `admin123`
+
+## API Endpoints
+- `/api/auth` register, login, logout, me
+- `/api/auth/admin` register, login, stats, users, bookings
+- `/api/movie`, `/api/theatre`, `/api/shows`
+- `/api/bookings` create, `/my`, `PUT /:id/cancel`
+- `/api/favorite`, `/api/reviews`
+
+> Note: Screenshots below are from the MERN app (React + Express + MongoDB). The demo link is a hosted UI preview of the same project.
 
 ## Screenshots 
 
